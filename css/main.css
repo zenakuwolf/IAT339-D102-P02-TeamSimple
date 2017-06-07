@@ -83,8 +83,10 @@ code{
 }
 
 .submit-button:hover/*, .submit-button:focus*/{
-  background-color: rgb(125, 200 , 50);
-  color:rgb(255, 255, 255);
+  /*background-color: rgb(7, 245, 115);*/
+  background-color: #999;
+  /*color:rgb(25, 25, 25);*/
+  color: rgb(0, 0, 0);
 }
 
 input[type=text]{
@@ -143,7 +145,6 @@ font-size: 125%;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: rgb(87, 87, 94);
     border: 3px solid black;
     transition: 0.5s;
     color: rgb(255, 255, 255);
@@ -153,7 +154,7 @@ font-size: 125%;
     -webkit-transition: background-color 0.5s ease-out;
     transition: background-color 0.5s ease-out;
     overflow: hidden;
-    background-color: rgb(18 , 125, 232);
+      background-color: #333;
     font-size: 125%;
 }
 
@@ -174,12 +175,12 @@ font-size: 125%;
 }
 
 .main-nav-list :hover:not(.active){
-  background-color: rgb(125, 200 , 50);
-  color: rgb(30, 30, 30);
+/*background-color: rgb(18 , 125, 232);*/
+background-color: #999;
 
 }
 .main-nav-list a:focus{
-    color: rgb(30, 30, 30);
+color: rgb(30, 30, 30);
 }
 
 
@@ -217,7 +218,9 @@ font-size: 125%;
 }
 
 .box-item-image:hover, .box-item-image:focus{
-  background-color: rgb(125, 200 , 50);
+  /*background-color: rgb(7, 245, 115);*/
+  background-color: #999;
+  color:rgb(25, 25, 25);
 }
 
 /*.box-item-text{
