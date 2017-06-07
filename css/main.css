@@ -173,10 +173,11 @@ font-size: 125%;
   text-decoration: none;
 }
 
-.main-nav-list a:hover, .main-nav-list a:focus{
-  /*background-color: #999;*/
+.main-nav-list :hover:not(.active), .main-nav-list :focus{
+  background-color: #999;
   color: rgb(30, 30, 30);
 }
+
 
 .box{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
