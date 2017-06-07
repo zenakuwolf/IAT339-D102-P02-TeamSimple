@@ -147,8 +147,8 @@ font-size: 125%;
     border: 3px solid black;
     transition: 0.5s;
     color: rgb(255, 255, 255);
-    padding: 0.5em 0.75em;
-    border-radius: 0.25em;
+/*    padding: 0.5em 0.75em;
+*/    border-radius: 0.25em;
     text-decoration: none;
     -webkit-transition: background-color 0.5s ease-out;
     transition: background-color 0.5s ease-out;
@@ -160,7 +160,7 @@ font-size: 125%;
 .main-nav-list li{
   float: left;
   color: #FFF;
-  border-right: 2px solid black;
+  border-right: 4px solid black;
 
 }
 
@@ -174,7 +174,7 @@ font-size: 125%;
 }
 
 .main-nav-list :hover:not(.active), .main-nav-list :focus{
-  background-color: #999;
+  background-color: rgb(125, 200 , 50);
   color: rgb(30, 30, 30);
 }
 
