@@ -175,6 +175,8 @@ font-size: 125%;
 
 .main-nav-list :hover:not(.active){
   background-color: rgb(125, 200 , 50);
+  color: rgb(30, 30, 30);
+
 }
 .main-nav-list a:focus{
     color: rgb(30, 30, 30);
