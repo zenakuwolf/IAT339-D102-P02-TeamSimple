@@ -160,7 +160,7 @@ font-size: 125%;
 .main-nav-list li{
   float: left;
   color: #FFF;
-  border-right: 4px solid black;
+  border-right: 2px solid black;
 
 }
 
@@ -173,9 +173,11 @@ font-size: 125%;
   text-decoration: none;
 }
 
-.main-nav-list :hover:not(.active), .main-nav-list :focus{
+.main-nav-list :hover:not(.active){
   background-color: rgb(125, 200 , 50);
-  color: rgb(30, 30, 30);
+}
+.main-nav-list a:focus{
+    color: rgb(30, 30, 30);
 }
 
 
