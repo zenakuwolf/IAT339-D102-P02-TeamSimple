@@ -150,7 +150,7 @@ font-size: 125%;
     border: 3px solid black;  
     border-radius: 0.25em;
     /*color: rgb(255, 255, 255);*/
-    color: rgb(10, 255, 230);
+    color: color: rgb(10, 255, 230);
     background-color: #333;
     font-size: 125%;
     text-decoration: none;
@@ -239,6 +239,10 @@ color: rgb(30, 30, 30);
   padding: 0 1rem;
 }*/
 
+figure{
+  display: block;
+}
+
 figcaption{
   text-align: center;
 }
@@ -248,9 +252,5 @@ figcaption{
     -webkit-order: 2;
     -ms-order: 2;
     order: 2;
-  }
-
-  .main-nav-list{
-
   }
 }
