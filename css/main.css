@@ -223,6 +223,12 @@ color: rgb(30, 30, 30);
   color:rgb(25, 25, 25);
 }
 
+.product_list{
+  width: 400px;
+  height: auto;
+  max-width: 100%;
+  border: 1px solid black;
+}
 /*.box-item-text{
   -webkit-flex: 1 1 18em;
   -ms-flex: 1 1 18em;
