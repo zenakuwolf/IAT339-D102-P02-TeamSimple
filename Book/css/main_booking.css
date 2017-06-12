@@ -67,7 +67,7 @@ ul{list-style-type: none;}
 	padding: 5px;
 	color: white;
 	background: rgb(18 , 125, 232);
-	color: white !importants
+	color: white !important
 }
 
 /*main menu*/
@@ -91,7 +91,7 @@ ul{list-style-type: none;}
 .main-nav-list li{
   float: left;
   color: #FFF;
-  border-right: 2px solid black;
+  /*border-right: 2px solid black;*/
 
 }
 
@@ -111,4 +111,38 @@ background-color: #999;
 }
 .main-nav-list a:focus{
 color: rgb(30, 30, 30);
+}
+
+.submit-button {
+	position: absolute;
+	left: 10%;
+	top:50%;
+	width: 80%;
+	text-align: center;
+
+  background-color: rgb(18 , 125, 232);
+  border: 3px solid black;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  padding: 2em 0.75em;
+  border-radius: 0.25em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+
+}
+
+.submit-button:hover/*, .submit-button:focus*/{
+  /*background-color: rgb(7, 245, 115);*/
+  background-color: #999;
+  /*color:rgb(25, 25, 25);*/
+  color: rgb(0, 0, 0);
+}
+
+.center-button{
+	position: absolute;
+	left: 0%;
+	top:50%;
+	width:100%;
+	text-align: center;
 }
