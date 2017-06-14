@@ -1,7 +1,9 @@
 /*
   The Hologram Station
-  IAT 339 - Project 2 CSS Code
-  modified by: Marlon Hernandez + 
+  IAT 339 - Project 1 CSS Code
+  modified by: Marlon Hernandez;
+
+  http://www.instantshift.com/2012/07/12/how-to-create-fancy-animated-buttons-in-pure-css3/
 */
 
 body {
@@ -38,10 +40,6 @@ code{
 }
 
 
-/* 
-  INTERACTIVE ELEMENTS -------------------
-*/
-
 .in-text {
   color: rgb(0, 149, 255);
   -webkit-transition: background-color 0.5s ease-out;
@@ -71,20 +69,25 @@ code{
   color: rgb(3, 20, 253);
 }
 
-.submit-button {
-  /*background-color: rgb(18 , 125, 232);*/
-  background-color: rgb(124, 127, 106);
+.book-button {
+  background-color: rgb(18 , 125, 232);
   border: 3px solid black;
   transition: 0.5s;
   color: rgb(255, 255, 255);
+  font-size: 48px;
   padding: 0.5em 0.75em;
   border-radius: 0.25em;
   text-decoration: none;
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
+  background: linear-gradient(top, #c72a2a 0% ,#9e0e0e 100%);
+  -webkit-box-shadow: 0px 0px 1px #FF3300, inset 0px 0px 1px #FFFFFF;
+  -moz-box-shadow: 0px 0px 1px #FF3300, inset 0px 0px 1px #FFFFFF;
+  box-shadow: 0px 0px 1px #FF3300, inset 0px 0px 1px #FFFFFF;
+
 }
 
-.submit-button:hover/*, .submit-button:focus*/{
+.book-button:hover/*, .submit-button:focus*/{
   /*background-color: rgb(7, 245, 115);*/
   background-color: #999;
   /*color:rgb(25, 25, 25);*/
@@ -96,10 +99,6 @@ input[type=text]{
    border-radius: 6px;
 }
 
-
-/* 
-  TEXT ELEMENTS -------------------
-*/
 
 .heading_1, .heading_2, .heading_3{
 color: rgb(29, 35, 36);
@@ -138,10 +137,6 @@ font-size: 125%;
   display: block;
   font-size: 125%
 }
-
-/* 
-  COMBINED ELEMENTS -------------------
-*/
 
 .main-nav-list{
     list-style-type: none;
@@ -216,8 +211,9 @@ color: rgb(30, 30, 30);
   width: auto;
   max-width: 300px;
   max-height: 300px;
-  display: block;
+  display: inline-block;
 }
+
 
 .box-item-image:hover, .box-item-image:focus{
   /*background-color: rgb(7, 245, 115);*/
@@ -232,6 +228,16 @@ color: rgb(30, 30, 30);
   border: 1px solid black;
 }
 
+.logo_list{
+  width: auto;
+  height: auto;
+  max-width: 50%;
+  max-height: 50%;
+  border: 1px solid black;
+  display: inline;
+}
+
+}
 /*.box-item-text{
   -webkit-flex: 1 1 18em;
   -ms-flex: 1 1 18em;
