@@ -12,13 +12,13 @@
 	width: 100%;
 }
 
-.grid-row::after {
+/*.grid-row::after {
 	content: "";
 	display: block;
 	clear: both;
-}
+}*/
 
-.grid-col-1of4 > .nav-main-item {
+.grid-col-1of4 > .nav-main-list {
 	width: 100%;
 }
 
@@ -28,6 +28,19 @@
   padding:0.5em;
   max-width: 50%;
   right: 0;
+}
+
+.navGrid{
+	position: relative;
+	display: inline-block;
+	z-index: 10;
+}
+
+.navGrid::after{
+	content:"";
+	display: block;
+	clear: both;
+	top: 0;
 }
 
 .bookGrid{
@@ -46,7 +59,7 @@
 	min-width: auto;
 	max-width: 100px;
 	position: fixed;
-	right: 35px;
+	right: 0;
 }
 
 .imgTop{

@@ -71,6 +71,7 @@ ul{list-style-type: none;}
 }
 
 /*main menu*/
+/*
 .main-nav-list{
     list-style-type: none;
     margin: 0;
@@ -78,7 +79,7 @@ ul{list-style-type: none;}
     border: 3px solid black;
     transition: 0.5s;
     color: rgb(255, 255, 255);
-/*    padding: 0.5em 0.75em;*/    
+/*    padding: 0.5em 0.75em;    
 	border-radius: 0.25em;
     text-decoration: none;
     -webkit-transition: background-color 0.5s ease-out;
@@ -91,7 +92,7 @@ ul{list-style-type: none;}
 .main-nav-list li{
   float: left;
   color: #FFF;
-  /*border-right: 2px solid black;*/
+  border-right: 2px solid black;
 
 }
 
@@ -106,14 +107,14 @@ ul{list-style-type: none;}
 }
 
 .main-nav-list :hover:not(.active){
-/*background-color: rgb(18 , 125, 232);*/
+background-color: rgb(18 , 125, 232);
 background-color: #999;
 
 }
 .main-nav-list a:focus{
 color: rgb(30, 30, 30);
 }
-
+*/
 .submit-button {
 	position: absolute;
 	left: 10%;
