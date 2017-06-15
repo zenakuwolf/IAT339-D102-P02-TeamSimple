@@ -1,44 +1,45 @@
-<!-- IAT 339 Project 1
+<!-- IAT 339 Project 2 Buy - fill out info page
 
-created by Marlon Hernandez
-modified on May 18, 2017
+The Hologram Station 
 
-HTML images tutorial: https://www.w3schools.com/html/html_images.asp
+created by: Marlon Hernandez + Jong Wom Im
+
+modified on June 14, 2017 
 
 -->
+
 <!DOCTYPE html>
 
 <html lang = "en">
 
 <head>
-	<title>The Hologame Station</title>
-
-	<link href="../css/main.css" rel="stylesheet">
-    <link href="../css/normalize.css" rel="stylesheet">
-    <link href="../css/grids.css" rel="stylesheet">
-
+	<title>Buying - fill out info</title>
 	<meta charset="utf-8">
-	
-	<div class = "imgTop"> 
-		<a href = "../mainPage.html"><figure> <img src="../imgs/img.png" alt = "insert image here"></figure></a>
-	</div>
+	<link href="../css/main_booking.css" rel="stylesheet">
+	<link href="../css/main.css" rel="stylesheet">
+	<link href="../css/grids.css" rel="stylesheet">
 </head>
 
 <body>
+	<div class = "imgTop"> 
+		<figure> <a href = "../_mainPage.html"><img src="../imgs/img.png" alt = "insert image here"> </a></figure> 
+	</div>
 
-<!-- Navigation bar + BOOK SUMMARY section -->
+<!-- Main Navigation  -->
 	<div class = "navGrid">
 		<nav>
 			 <ul class = "main-nav-list">
-	             <li><a href="../book/book.html">BOOK</a></li>
-	            <li><a href="../buy/buy.html">BUY</a></li>
-	            <li><a href="../blog.html">BLOG</a></li>
+	            <li><a href="../book/book.html">BOOK</a></li>
+	            <li><a href="buy.html">BUY</a></li>
+	            <li><a href="../blog/blog.html">BLOG</a></li>
 	            <li><a href="../locate.html">LOCATE</a></li>
 	            <li><a href="#">MY ACCOUNT</a></li>
 	          </ul>
 		</nav>
 	</div>
+<!-- ************* -->
 
+<!-- Book + Cart buttons -->
 	<div class = "cartGrid">
 		<button class="button-nav"><a href="buy_1_basket.html">CART</a></button>
 	</div>
@@ -46,16 +47,21 @@ HTML images tutorial: https://www.w3schools.com/html/html_images.asp
 	<div class = "bookGrid">
 		<button type = "submit" value = "Submit" class = "book-button"><a href="../book/book.html">BOOK A STATION!</a></button>
 	</div>
-<!-- **************** -->
+<!-- ************** -->
 
 	<h1> Fill Out Information </h1>
 
-	<form class = "center-button">
-		First Name:	<input type="text" name="first_name"><br>
-		Last Name: <input type="text" name="last_name"><br>
-		E-mail Address: <input type="email" name="email"><br>
+	<div class = "bodyText1"> 
+		<!-- <form class = "center-button"> -->
+			First Name:	<input type="text" name="first_name"><br>
+			Last Name: <input type="text" name="last_name"><br>
+			E-mail Address: <input type="email" name="email"><br>
+		<!-- </form> -->
+	</div>
 
-		<h2> Shipping Information </h2>
+	<h2> Shipping Information </h2>
+
+	<div class="bodyText2">
 		Apt #: <input type="text" name="apt"><br>
 		Street Adress: <input type="text" name="stAdd"><br>
 		Address Line 2: <input type="text" name="stAdd2"><br>
@@ -63,8 +69,10 @@ HTML images tutorial: https://www.w3schools.com/html/html_images.asp
 		State/Province/Region: <input type="text" name="region"><br>
 		Postal/Zip Code: <input type="text" name="zipCode"><br>
 		Country: <input type="text" name="country"><br>
+	</div>
 
-		<h2> Billing Information </h2>
+	<h2> Billing Information </h2>
+	<div class="bodyText3">
 		<h3> Enter your payment details below</h3>
 
 		<p> Payment Options: </p>
@@ -123,16 +131,13 @@ HTML images tutorial: https://www.w3schools.com/html/html_images.asp
 			<option value="nb">NB</option>
 		</select>
 		Postal Code: <input type="text" name= "billPostal"><br>
+	</div>
 
+		<p>
 		<button class="button-nav"><a href="buy_1_basket.html">Previous</a></button>
-		<button class="button-nav"><a href="buy_3_orderSum.html">Next</a></button>
-
-
-
-
-
-
-	</form>
+		<button class="button-nav"><a href="buy_3_orderSum.html">Next</a></button></p>
 
 
 </body>
+
+</html>

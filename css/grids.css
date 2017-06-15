@@ -1,3 +1,13 @@
+/* IAT 339 Project 2 Grid CSS Code
+
+  The Hologram Station
+
+   created by: Marlon Hernandez + Jong Won Im
+
+  modified on June 14, 2017
+
+*/
+
 *, *::after, *::before {
 	box-sizing: border-box;
 }
@@ -23,11 +33,11 @@
 }
 
 
-.bodyText1, .bodyText2, .bodyText3{
+.bodyText1, .bodyText2, .bodyText3, .bodyText4, .bodyText5{
   position: relative;
   padding:0.5em;
-  max-width: 50%;
-  right: 0;
+  max-width: 60%;
+  left: 30px;
 }
 
 .navGrid{
@@ -49,21 +59,23 @@
 	min-width: auto;
 	max-width: 100px;
 	position: fixed;
-	right: 300px;
+	right: 275px;
 	margin-top: 100px;
 }
 
 .cartGrid{
+	font-size: 24px;
 	z-index: 0;
 	min-height: auto;
 	min-width: auto;
-	max-width: 100px;
+	max-width: 200px;
 	position: fixed;
-	right: 0;
+	right: 100px;
+	display: inline-block;
 }
 
 .imgTop{
-	z-index: -1;
+  z-index: 1;
 }
 /*
 	Because our navigation is now fixed and overlaps our content, we need to introduce some space at the top of our page to ensure that overlap doesn't occur. The simplest solution to this is to introduce 'padding-top' to the body element so all the content has some additional spacing (thereby avoiding the overlap).

@@ -1,3 +1,12 @@
+/* IAT 339 Project 2 Booking CSS Code
+
+  The Hologram Station
+
+   created by: Marlon Hernandez + Jong Won Im
+
+  modified on June 14, 2017
+
+*/
 ul{list-style-type: none;}
 
 /*Month header*/
@@ -118,7 +127,7 @@ color: rgb(30, 30, 30);
 .submit-button {
 	position: absolute;
 	left: 10%;
-	top:60%;
+	top:50%;
 	width: 80%;
 	text-align: center;
 

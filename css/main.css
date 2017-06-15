@@ -1,4 +1,4 @@
-/* IAT 339 Project 2 CSS Code
+/* IAT 339 Project 2 MAIN CSS Code
 
   The Hologram Station
 
@@ -7,8 +7,6 @@
   modified on June 14, 2017
 
 */
-
-
 
 body {
 
@@ -95,6 +93,8 @@ a{
   -webkit-box-shadow: 0px 0px 1px #FF3300, inset 0px 0px 1px #FFFFFF;
   -moz-box-shadow: 0px 0px 1px #FF3300, inset 0px 0px 1px #FFFFFF;
   box-shadow: 0px 0px 1px #FF3300, inset 0px 0px 1px #FFFFFF;
+  /*width: 100%;*/
+
 }
 
 .book-button:hover/*, .submit-button:focus*/{
@@ -110,7 +110,10 @@ input[type=text]{
 }
 
 .imgTop{
-  width: 100%;
+  max-width: auto;
+  max-height: auto;
+  min-width: 300%;
+  /*width: 100%;*/
   position: relative;
   left: 50;
   right: 50;
@@ -257,8 +260,8 @@ color: rgb(30, 30, 30);
 .logo_list{
   width: auto;
   height: auto;
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 150%;
+  max-height: 150%;
   border: 1px solid black;
   display: inline;
 }
@@ -360,6 +363,11 @@ color: rgb(30, 30, 30);
 
 figure{
   display: block;
+}
+
+figure{
+  max-width: auto;
+  max-height: auto;
 }
 
 figcaption{

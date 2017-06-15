@@ -1,28 +1,28 @@
-<!-- IAT 339 Project 1
+<!-- IAT 339 Project 2 Buy page
 
-created by Marlon Hernandez
-modified on May 18, 2017
+The Hologram Station 
 
-HTML images tutorial: https://www.w3schools.com/html/html_images.asp
+created by: Marlon Hernandez + Jong Wom Im
+
+modified on June 14, 2017 
 
 -->
+
 <!DOCTYPE html>
 
 <html lang = "en">
 
 <head>
-	<title>The Hologame Station</title>
-
-	<link href="../css/main.css" rel="stylesheet">
-    <link href="../css/normalize.css" rel="stylesheet">
-    <link href="../css/grids.css" rel="stylesheet">
-
+	<title>Buying page</title>
 	<meta charset="utf-8">
+	<link href="../css/main_booking.css" rel="stylesheet">
+	<link href="../css/main.css" rel="stylesheet">
+	<link href="../css/grids.css" rel="stylesheet">
 </head>
 
 <body>
 	<div class = "imgTop"> 
-		<a href = "../mainPage.html"><figure> <img src="../imgs/img.png" alt = "insert image here"></figure></a>
+		<figure> <a href = "../_mainPage.html"><img src="../imgs/img.png" alt = "insert image here"> </a></figure> 
 	</div>
 
 <!-- Main Navigation  -->
@@ -30,7 +30,7 @@ HTML images tutorial: https://www.w3schools.com/html/html_images.asp
 		<nav>
 			 <ul class = "main-nav-list">
 	            <li><a href="../book/book.html">BOOK</a></li>
-	            <li><a href="../buy/buy.html">BUY</a></li>
+	            <li><a href="buy.html">BUY</a></li>
 	            <li><a href="../blog/blog.html">BLOG</a></li>
 	            <li><a href="../locate.html">LOCATE</a></li>
 	            <li><a href="#">MY ACCOUNT</a></li>
@@ -48,11 +48,11 @@ HTML images tutorial: https://www.w3schools.com/html/html_images.asp
 		<button type = "submit" value = "Submit" class = "book-button"><a href="../book/book.html">BOOK A STATION!</a></button>
 	</div>
 <!-- ************** -->
+	
+	<h1>Merchandise</h1>
 
 	<div class = "bodyText1">
-		<h1> Merchandises </h1>
 		<img id="itemImg" src = "../imgs/img.png" alt = "Lorem ipsum dolor sit amet" width ="200" height="125">
-
 			<div id = "merchModal2" class="modal">
 			<div class = "box-item-image">
 				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
@@ -79,17 +79,14 @@ HTML images tutorial: https://www.w3schools.com/html/html_images.asp
 				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
 				<img class = "modal-content" id="img02">
 				<div id="caption2"></div>
-			</div>
+			</div><br>
 
-	</div>
-
-	<div class = "searching">
 		<input type="text" name = "item" placeholder=" Enter keywords"> <button type = "submit" value = "Submit">Search</button>
+
 	</div>
 
+	<h2>Deals</h2>
 	<div class = "bodyText2">
-		<h2>Deals</h2>
-
 		<!-- Deal Item #1 -->
 				<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 1" width ="200" height="125">
 			<div id = "merchModal" class="modal">
@@ -161,8 +158,8 @@ HTML images tutorial: https://www.w3schools.com/html/html_images.asp
 
 	</div>
 
+	<h2>Yu-Gi-Oh</h2>
 	<div class = "bodyText3">
-		<h2>Yu-Gi-Oh</h2>
 		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
 			<div id = "merchModal2" class="modal">
 				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
@@ -183,8 +180,8 @@ HTML images tutorial: https://www.w3schools.com/html/html_images.asp
 			</div>
 	</div>
 
+	<h2>Pokémon</h2>
 	<div class = "bodyText4">
-		<h2>Pokémon</h2>
 		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
 			<div id = "merchModal2" class="modal">
 				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
@@ -205,8 +202,8 @@ HTML images tutorial: https://www.w3schools.com/html/html_images.asp
 			</div>
 	</div>
 
+	<h2>Magic: The Gathering</h2>
 	<div class = "bodyText5">
-		<h2>Magic: The Gathering</h2>
 		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
 			<div id = "merchModal2" class="modal">
 				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
@@ -226,11 +223,8 @@ HTML images tutorial: https://www.w3schools.com/html/html_images.asp
 				<div id="caption2"></div>
 			</div>
 	</div>
-
-
-
-
 
 </body>
+
 </html>
 
