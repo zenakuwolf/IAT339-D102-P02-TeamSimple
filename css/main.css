@@ -37,7 +37,6 @@ code{
 
 *, *::after, *::before{
   box-sizing: border-box;
-
 }
 
 
@@ -56,7 +55,8 @@ code{
 .button-nav {
   display: inline-block;
   padding: 0.5em 0.75em;
-  color: #FFF;
+  /*color: #FFF;*/
+  color: rgb(10, 255, 230);
   background-color: #333;
   border-radius: 0.25em;
   text-decoration: none;
@@ -66,6 +66,7 @@ code{
 
 .button-nav:hover, .button-nav:focus {
   background-color: #999;
+  color: rgb(3, 20, 253);
 }
 
 .book-button {
@@ -141,44 +142,44 @@ font-size: 125%;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    border: 3px solid black;
-    transition: 0.5s;
-    color: rgb(255, 255, 255);
-/*    padding: 0.5em 0.75em;
-*/    border-radius: 0.25em;
+    border: 3px solid black;  
+    border-radius: 0.25em;
+    /*color: rgb(255, 255, 255);*/
+    color: color: rgb(10, 255, 230);
+    background-color: #333;
+    font-size: 125%;
     text-decoration: none;
+    transition: 0.5s;
     -webkit-transition: background-color 0.5s ease-out;
     transition: background-color 0.5s ease-out;
     overflow: hidden;
-      background-color: #333;
-    font-size: 125%;
 }
 
 .main-nav-list li{
   float: left;
-  color: #FFF;
   border-right: 2px solid black;
 
 }
 
 .main-nav-list a{
   display: block;
-  color: white;
   text-align: center;
   padding: 14px 16px;
   margin-right: 100px;
   text-decoration: none;
+  color: rgb(10, 255, 230);
 }
 
 .main-nav-list :hover:not(.active){
-/*background-color: rgb(18 , 125, 232);*/
-background-color: #999;
-
+  /*background-color: rgb(18 , 125, 232);*/
+  background-color: #999;
+  /*color: solid white;*/
+  color: rgb(3, 20, 253);
 }
+
 .main-nav-list a:focus{
 color: rgb(30, 30, 30);
 }
-
 
 .box{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
@@ -196,7 +197,7 @@ color: rgb(30, 30, 30);
   -webkit-flex: 1 1 18em;
   -ms-flex: 1 1 18em;
   flex: 1 1 18em;
-  background-color: rgb(87, 87, 94);
+  background-color: #333;
   border: 2px solid black;
   transition: 0.5s;
   color: rgb(255, 255, 255);
@@ -243,6 +244,10 @@ color: rgb(30, 30, 30);
   flex: 1 1 18em;
   padding: 0 1rem;
 }*/
+
+figure{
+  display: block;
+}
 
 figcaption{
   text-align: center;
