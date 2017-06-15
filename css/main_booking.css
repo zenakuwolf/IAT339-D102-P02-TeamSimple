@@ -100,7 +100,8 @@ ul{list-style-type: none;}
   color: white;
   text-align: center;
   padding: 14px 16px;
-  margin-right: 100px;
+  margin-right: 30px;
+  margin-left: 30px;
   text-decoration: none;
 }
 
@@ -116,7 +117,7 @@ color: rgb(30, 30, 30);
 .submit-button {
 	position: absolute;
 	left: 10%;
-	top:50%;
+	top:60%;
 	width: 80%;
 	text-align: center;
 
@@ -145,4 +146,8 @@ color: rgb(30, 30, 30);
 	top:50%;
 	width:100%;
 	text-align: center;
+}
+
+.imgTop{
+	width: 100%;
 }
