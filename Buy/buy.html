@@ -29,8 +29,8 @@ HTML images tutorial: https://www.w3schools.com/html/html_images.asp
 	<div class = "navGrid">
 		<nav>
 			 <ul class = "main-nav-list">
-	            <li><a href="#">BOOK</a></li>
-	            <li><a href="#">BUY</a></li>
+	            <li><a href="../book.html">BOOK</a></li>
+	            <li><a href="buy.html">BUY</a></li>
 	            <li><a href="#">BLOG</a></li>
 	            <li><a href="#">LOCATE</a></li>
 	            <li><a href="#">MY ACCOUNT</a></li>
@@ -39,7 +39,7 @@ HTML images tutorial: https://www.w3schools.com/html/html_images.asp
 	</div>
 
 	<div class = "cartGrid">
-		<button class="button-nav" href="#">CART</button>
+		<button class="button-nav"><a href="buy_1_basket.html">CART</a></button>
 	</div>
 
 	<div class = "bookGrid">
@@ -47,11 +47,37 @@ HTML images tutorial: https://www.w3schools.com/html/html_images.asp
 	</div>
 
 	<div class = "bodyText1">
-		<h1> Merchandise </h1>
-		<figure><img src="../imgs/img.png" alt="insert image here"></figure>
-		<figure><img src="../imgs/img.png" alt="insert image here"></figure>
-		<figure><img src="../imgs/img.png" alt="insert image here"></figure>
-		<figure><img src="../imgs/img.png" alt="insert image here"></figure>
+		<h1> Merchandises </h1>
+		<img id="itemImg" src = "../imgs/img.png" alt = "Lorem ipsum dolor sit amet" width ="200" height="125">
+
+			<div id = "merchModal2" class="modal">
+			<div class = "box-item-image">
+				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
+				<img class = "modal-content" id="img02">
+				<div id="caption2"></div>
+				<button class="button-nav" href="#">Add Cart</button>
+			</div>
+		</div>
+
+		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
+			<div id = "merchModal2" class="modal">
+				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
+				<img class = "modal-content" id="img02">
+				<div id="caption2"></div>
+			</div>
+		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
+			<div id = "merchModal2" class="modal">
+				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
+				<img class = "modal-content" id="img02">
+				<div id="caption2"></div>
+			</div>
+		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
+			<div id = "merchModal2" class="modal">
+				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
+				<img class = "modal-content" id="img02">
+				<div id="caption2"></div>
+			</div>
+
 	</div>
 
 	<div class = "searching">
@@ -60,30 +86,148 @@ HTML images tutorial: https://www.w3schools.com/html/html_images.asp
 
 	<div class = "bodyText2">
 		<h2>Deals</h2>
-		<figure><img src="../imgs/img.png" alt="insert image here"></figure>
-		<figure><img src="../imgs/img.png" alt="insert image here"></figure>
-		<figure><img src="../imgs/img.png" alt="insert image here"></figure>
+
+		<!-- Deal Item #1 -->
+				<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 1" width ="200" height="125">
+			<div id = "merchModal" class="modal">
+				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
+				<img class = "modal-content" id="img01">
+				<div id="caption"></div>
+			</div>
+			<script>
+				// Get modal
+				var modal= document.getElementById('merchModal');
+
+				// Get image and insert inside modal
+				var img=document.getElementById('itemImg');
+				var modalImg=document.getElementById("img01");
+				var captionText=document.getElementById("caption");
+				img.onclick=function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+				}
+
+				// Get <span> element that closes modal
+				var span = document.getElementsByClassName("close")[0];
+
+				// When user clicks on <span> (x), close modal
+				span.onclick = function(){
+					modal.style.display = "none";
+				}
+			</script>
+		<!-- ***************** -->
+
+		<!-- Deal Item #2 -->
+				<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
+			<div id = "merchModal2" class="modal">
+				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
+				<img class = "modal-content" id="img02">
+				<div id="caption2"></div>
+			</div>
+
+			<!-- <script>
+				// Get modal
+				var modal2= document.getElementById('merchModal2');
+
+				// Get image and insert inside modal
+				var img=document.getElementById('itemImg');
+				var modalImg2=document.getElementById("img02");
+				var captionText2=document.getElementById("caption2");
+				img.onclick=function(){
+					modal2.style.display = "block";
+					modalImg2.src = this.src;
+					captionText2.innerHTML = this.alt;
+				}
+
+				// Get <span> element that closes modal
+				var span2 = document.getElementsByClassName("close")[0];
+
+				// When user clicks on <span> (x), close modal
+				span.onclick = function(){
+					modal2.style.display = "none";
+				}
+			</script> -->
+		<!-- ***************** -->
+		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
+			<div id = "merchModal2" class="modal">
+				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
+				<img class = "modal-content" id="img02">
+				<div id="caption2"></div>
+			</div>
+
 	</div>
 
 	<div class = "bodyText3">
 		<h2>Yu-Gi-Oh</h2>
-		<figure><img src="../imgs/img.png" alt="insert image here"></figure>
-		<figure><img src="../imgs/img.png" alt="insert image here"></figure>
-		<figure><img src="../imgs/img.png" alt="insert image here"></figure>
+		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
+			<div id = "merchModal2" class="modal">
+				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
+				<img class = "modal-content" id="img02">
+				<div id="caption2"></div>
+			</div>
+		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
+			<div id = "merchModal2" class="modal">
+				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
+				<img class = "modal-content" id="img02">
+				<div id="caption2"></div>
+			</div>
+		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
+			<div id = "merchModal2" class="modal">
+				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
+				<img class = "modal-content" id="img02">
+				<div id="caption2"></div>
+			</div>
 	</div>
 
 	<div class = "bodyText4">
 		<h2>Pokémon</h2>
-		<figure><img src="../imgs/img.png" alt="insert image here"></figure>
-		<figure><img src="../imgs/img.png" alt="insert image here"></figure>
-		<figure><img src="../imgs/img.png" alt="insert image here"></figure>
+		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
+			<div id = "merchModal2" class="modal">
+				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
+				<img class = "modal-content" id="img02">
+				<div id="caption2"></div>
+			</div>
+		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
+			<div id = "merchModal2" class="modal">
+				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
+				<img class = "modal-content" id="img02">
+				<div id="caption2"></div>
+			</div>
+		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
+			<div id = "merchModal2" class="modal">
+				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
+				<img class = "modal-content" id="img02">
+				<div id="caption2"></div>
+			</div>
 	</div>
 
 	<div class = "bodyText5">
 		<h2>Magic: The Gathering</h2>
-		<figure><img src="../imgs/img.png" alt="insert image here"></figure>
-		<figure><img src="../imgs/img.png" alt="insert image here"></figure>
-		<figure><img src="../imgs/img.png" alt="insert image here"></figure>
+		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
+			<div id = "merchModal2" class="modal">
+				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
+				<img class = "modal-content" id="img02">
+				<div id="caption2"></div>
+			</div>
+		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
+			<div id = "merchModal2" class="modal">
+				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
+				<img class = "modal-content" id="img02">
+				<div id="caption2"></div>
+			</div>
+		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
+			<div id = "merchModal2" class="modal">
+				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
+				<img class = "modal-content" id="img02">
+				<div id="caption2"></div>
+			</div>
 	</div>
 
+
+
+
+
 </body>
+</html>
+
