@@ -9,10 +9,10 @@
 */
 
 body {
-
   font-family: "Trebuchet MS", sans-serif;
   padding: 2rem;
-
+  background-color: #333;
+  color: rgb(229, 229, 229);
 }
 
 section:not([id]) {
@@ -122,6 +122,7 @@ input[type=text]{
 .imgTop:hover, .imgTop:focus{
   opacity: 0.6;
 }
+
 .heading_1, .heading_2, .heading_3{
 color: rgb(29, 35, 36);
 }
@@ -139,24 +140,20 @@ font-size: 175%;
 font-size: 125%;
 }
 
-
 .bodyPara{
   color: rgb(15, 15, 15);
   font-size: 80%;
 }
-
 
 .bullet-list{
   list-style-type: circle;
   color: rgb(25, 41, 59);
 }
 
-
 .order-list{
   list-style-type: upper-roman;
   color: rgb(22, 28, 51);
 }
-
 
 .citation-list{
   list-style-type: none;
@@ -168,12 +165,13 @@ font-size: 125%;
     display: inline-block;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0.25rem 0.5rem;
     border: 3px solid black;  
-    border-radius: 0.25em;
+    /*border-radius: 0.25em;*/
     /*color: rgb(255, 255, 255);*/
-    color: color: rgb(10, 255, 230);
-    background-color: #333;
+    /*color: rgb(10, 255, 230);*/
+    /*background-color: #333;*/
+    background-color: #7F7F7F;
     font-size: 125%;
     text-decoration: none;
     transition: 0.5s;
@@ -182,12 +180,10 @@ font-size: 125%;
     overflow: hidden;
 }
 
-
 .main-nav-list li{
   float: left;
   border-right: 2px solid black;
 }
-
 
 .main-nav-list a{
   display: block;
@@ -195,7 +191,6 @@ font-size: 125%;
   padding: 14px 16px;
   margin-right: 100px;
   text-decoration: none;
-  color: rgb(10, 255, 230);
 }
 
 .main-nav-list :hover:not(.active){
