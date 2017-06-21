@@ -85,7 +85,7 @@ a{
   border: 3px solid black;
   transition: 0.5s;
   color: rgb(255, 255, 255);
-  font-size: 48px;
+  font-size: 30px;
   padding: 0.5em 0.75em;
   border-radius: 0.25em;
   text-decoration: none;
@@ -176,6 +176,7 @@ font-size: 125%;
     border: 3px solid black;  
     border-radius: 0.25em;
     top: 0px;
+    right: 0px;
     /*color: rgb(255, 255, 255);*/
     color: color: rgb(10, 255, 230);
     background-color: #333;
