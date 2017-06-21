@@ -12,6 +12,7 @@ body {
 
   font-family: "Trebuchet MS", sans-serif;
   padding: 2rem;
+  background-color: powderblue;
 
 }
 
@@ -46,8 +47,8 @@ code{
 a{
   text-decoration: none;
   color: rgb(255, 255, 255);
-
 }
+
 .in-text {
   color: rgb(0, 149, 255);
   -webkit-transition: background-color 0.5s ease-out;
@@ -62,11 +63,12 @@ a{
 
 /* Styling for the navigation button */
 .button-nav {
+
   display: inline-block;
   padding: 0.5em 0.75em;
   /*color: #FFF;*/
   color: rgb(10, 255, 230);
-  background-color: #333;
+  background-color: #777;
   border-radius: 0.25em;
   text-decoration: none;
   -webkit-transition: background-color 0.5s ease-out;
@@ -110,13 +112,14 @@ input[type=text]{
 }
 
 .imgTop{
-  max-width: auto;
-  max-height: auto;
-  min-width: 300%;
-  /*width: 100%;*/
+/*  max-width: auto;
+  max-height: auto;*/
+/*  min-width: 300%;
+  width: 100%;*/
   position: relative;
-  left: 50;
-  right: 50;
+  right: 50px;
+  top: 50px;
+
 }
 
 .imgTop:hover, .imgTop:focus{
@@ -165,12 +168,14 @@ font-size: 125%;
 }
 
 .main-nav-list{
+    position: fixed;
     display: inline-block;
     list-style-type: none;
     margin: 0;
     padding: 0;
     border: 3px solid black;  
     border-radius: 0.25em;
+    top: 0px;
     /*color: rgb(255, 255, 255);*/
     color: color: rgb(10, 255, 230);
     background-color: #333;
@@ -192,8 +197,9 @@ font-size: 125%;
 .main-nav-list a{
   display: block;
   text-align: center;
-  padding: 14px 16px;
-  margin-right: 100px;
+  width: 200px;
+  padding: 14px;
+/*  margin-right: 100px;*/
   text-decoration: none;
   color: rgb(10, 255, 230);
 }
