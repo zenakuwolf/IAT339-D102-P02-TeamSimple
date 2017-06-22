@@ -76,7 +76,7 @@ ul{list-style-type: none;}
 .days li .active{
 	padding: 5px;
 	color: white;
-	background: rgb(18 , 125, 232);
+	background: #666;
 	color: white !important
 }
 
