@@ -298,6 +298,17 @@ color: rgb(30, 30, 30);
 
 #itemImg:hover{opacity: 0.4;}
 
+#itemImg1{
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 15%;
+  height: 15%;
+  padding-right: 1em;
+}
+
+#itemImg1:hover{opacity: 0.4;}
+
 /* Modal (bkg) */
 .modal{
   display: none;

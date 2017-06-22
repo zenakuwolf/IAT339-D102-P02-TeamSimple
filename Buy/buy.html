@@ -35,7 +35,7 @@ modified on June 14, 2017
 	            <li><a href="buy/buy.html">BUY</a></li>
 	            <li><a href="../blog/blog.html">BLOG</a></li>
 	            <li><a href="../locate.html">LOCATE</a></li>
-	            <li style="float:right"><a href="account.html">MY ACCOUNT</a></li>
+	            <li style="float:right"><a href="../account.html">MY ACCOUNT</a></li>
 
 	          </ul>
 		</nav>
@@ -89,22 +89,22 @@ modified on June 14, 2017
 		<!-- Deal Item #1 -->
 		<img id="itemImg" src = "../imgs/merch/darkMagician.jpg" alt = "Dark Magician">
 			<div id = "merchModal0" class="modal">
-				<span class = "close" onclick="document.getElementById('merchModal0').style.display='none'">&times; </span>
+				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
 				<img class = "modal-content" id="img00">
-				<div id="caption0"></div>
+				<div id="caption"></div>
 			</div>
 			<script>
 				// Get modal
-				var modal0= document.getElementById('merchModal0');
+				var modal= document.getElementById('merchModal');
 
 				// Get image and insert inside modal
-				var img0=document.getElementById('itemImg');
-				var modalImg0=document.getElementById("img00");
-				var captionText0=document.getElementById("caption0");
+				var img=document.getElementById('itemImg');
+				var modalImg=document.getElementById("img00");
+				var captionText=document.getElementById("caption");
 				img.onclick=function(){
-					modal0.style.display = "block";
-					modalImg0.src = this.src;
-					captionText0.innerHTML = this.alt;
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
 				}
 
 				// Get <span> element that closes modal
@@ -112,25 +112,25 @@ modified on June 14, 2017
 
 				// When user clicks on <span> (x), close modal
 				span.onclick = function(){
-					modal0.style.display = "none";
+					modal.style.display = "none";
 				}
 			</script>
-
 		<!-- ***************** -->
 
 		<!-- Deal Item #2 -->
-		<img id="itemImg" src = "../imgs/merch/charmander.jpg" alt = "Charmander" >
-			<div id = "merchModal" class="modal">
-				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
+		<img id="itemImg1" src = "../imgs/merch/charmander.jpg" alt = "Charmander" >
+			<div id = "merchModal1" class="modal">
+				<span class = "close" onclick="document.getElementById('merchModal1').style.display='none'">&times; </span>
 				<img class = "modal-content" id="img01">
 				<div id="caption1"></div>
 			</div>
-			<script>
+			<!-- <script>
 				// Get modal
 				var modal1= document.getElementById('merchModal');
 
 				// Get image and insert inside modal
-				var modalImg=document.getElementById("img01");
+				var img1=document.getElementById('itemImg1');
+				var modalImg1=document.getElementById("img01");
 				var captionText1=document.getElementById("caption1");
 				img.onclick=function(){
 					modal1.style.display = "block";
@@ -145,7 +145,7 @@ modified on June 14, 2017
 				span.onclick = function(){
 					modal1.style.display = "none";
 				}
-			</script>
+			</script> -->
 		<!-- ***************** -->
 
 		<!-- Deal Item #3 -->
@@ -155,7 +155,7 @@ modified on June 14, 2017
 				<img class = "modal-content" id="img01">
 				<div id="caption1"></div>
 			</div>
-			<script>
+<!-- 			<script>
 				// Get modal
 				var modal1= document.getElementById('merchModal');
 
@@ -175,7 +175,7 @@ modified on June 14, 2017
 				span.onclick = function(){
 					modal1.style.display = "none";
 				}
-			</script>
+			</script> -->
 		<!-- ***************** -->
 		<a href="#">See more</a>
 
@@ -190,7 +190,8 @@ modified on June 14, 2017
 				<img class = "modal-content" id="img01">
 				<div id="caption1"></div>
 			</div>
-			<script>
+
+			<!-- <script>
 				// Get modal
 				var modal1= document.getElementById('merchModal');
 
@@ -210,7 +211,7 @@ modified on June 14, 2017
 				span.onclick = function(){
 					modal1.style.display = "none";
 				}
-			</script>
+			</script> -->
 		<!-- ***************** -->
 
 	<!-- Item #2 -->
@@ -220,7 +221,7 @@ modified on June 14, 2017
 			<img class = "modal-content" id="img01">
 			<div id="caption1"></div>
 		</div>
-		<script>
+		<!-- <script>
 			// Get modal
 			var modal1= document.getElementById('merchModal');
 
@@ -240,7 +241,7 @@ modified on June 14, 2017
 			span.onclick = function(){
 				modal1.style.display = "none";
 			}
-		</script>
+		</script> -->
 	<!-- ***************** -->
 
 	<!-- Item #3 -->
@@ -250,7 +251,7 @@ modified on June 14, 2017
 			<img class = "modal-content" id="img01">
 			<div id="caption1"></div>
 		</div>
-		<script>
+	<!-- 	<script>
 			// Get modal
 			var modal1= document.getElementById('merchModal');
 
@@ -270,7 +271,7 @@ modified on June 14, 2017
 			span.onclick = function(){
 				modal1.style.display = "none";
 			}
-		</script>
+		</script> -->
 	<!-- ***************** -->
 	<a href="#">See more</a>
 
@@ -285,7 +286,7 @@ modified on June 14, 2017
 			<img class = "modal-content" id="img01">
 			<div id="caption1"></div>
 		</div>
-		<script>
+		<!-- <script>
 			// Get modal
 			var modal1= document.getElementById('merchModal');
 
@@ -305,7 +306,7 @@ modified on June 14, 2017
 			span.onclick = function(){
 				modal1.style.display = "none";
 			}
-		</script>
+		</script> -->
 	<!-- ***************** -->
 	
 	<!-- Item #2 -->
@@ -315,7 +316,7 @@ modified on June 14, 2017
 			<img class = "modal-content" id="img01">
 			<div id="caption1"></div>
 		</div>
-		<script>
+		<!-- <script>
 			// Get modal
 			var modal1= document.getElementById('merchModal');
 
@@ -335,7 +336,7 @@ modified on June 14, 2017
 			span.onclick = function(){
 				modal1.style.display = "none";
 			}
-		</script>
+		</script> -->
 	<!-- ***************** -->	
 
 	<!-- Item #3 -->
@@ -345,7 +346,7 @@ modified on June 14, 2017
 			<img class = "modal-content" id="img01">
 			<div id="caption1"></div>
 		</div>
-		<script>
+		<!-- <script>
 			// Get modal
 			var modal1= document.getElementById('merchModal');
 
@@ -365,7 +366,7 @@ modified on June 14, 2017
 			span.onclick = function(){
 				modal1.style.display = "none";
 			}
-		</script>
+		</script> -->
 	<!-- ***************** -->
 	<a href="#">See more</a>
 	
@@ -380,7 +381,7 @@ modified on June 14, 2017
 			<img class = "modal-content" id="img01">
 			<div id="caption1"></div>
 		</div>
-		<script>
+		<!-- <script>
 			// Get modal
 			var modal1= document.getElementById('merchModal');
 
@@ -400,7 +401,7 @@ modified on June 14, 2017
 			span.onclick = function(){
 				modal1.style.display = "none";
 			}
-		</script>
+		</script> -->
 	<!-- ***************** -->
 	
 	<!-- Item #2 -->
@@ -410,7 +411,7 @@ modified on June 14, 2017
 			<img class = "modal-content" id="img01">
 			<div id="caption1"></div>
 		</div>
-		<script>
+		<!-- <script>
 			// Get modal
 			var modal1= document.getElementById('merchModal');
 
@@ -430,7 +431,7 @@ modified on June 14, 2017
 			span.onclick = function(){
 				modal1.style.display = "none";
 			}
-		</script>
+		</script> -->
 	<!-- ***************** -->
 
 	<!-- Item #3 -->
@@ -440,7 +441,7 @@ modified on June 14, 2017
 			<img class = "modal-content" id="img01">
 			<div id="caption1"></div>
 		</div>
-		<script>
+		<!-- <script>
 			// Get modal
 			var modal1= document.getElementById('merchModal');
 
@@ -460,7 +461,7 @@ modified on June 14, 2017
 			span.onclick = function(){
 				modal1.style.display = "none";
 			}
-		</script>
+		</script> -->
 	<!-- ***************** -->	
 	<a href="#">See more</a>
 
