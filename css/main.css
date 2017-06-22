@@ -12,9 +12,9 @@ body {
 
   font-family: "Trebuchet MS", sans-serif;
   padding: 2rem;
-  background: url("../imgs/bg.jpg");
-  background-size: 100% 700px;
-
+/*  background: url("../imgs/bg.jpg");
+  background-size: 100% 700px;*/
+  background-color: #555;
 
 }
 
@@ -51,9 +51,9 @@ a{
   color: rgb(255, 255, 255);
 }
 
-.content{
+/*.content{
   background-color: #999;
-}
+}*/
 
 .in-text {
   color: rgb(0, 149, 255);
