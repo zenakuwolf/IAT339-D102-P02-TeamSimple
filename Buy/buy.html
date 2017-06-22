@@ -22,38 +22,55 @@ modified on June 14, 2017
 </head>
 
 <body>
+	<div class="content">
 	<div class = "imgTop"> 
-		<figure> <a href = "../_mainPage.html"><img src="../imgs/img.png" alt = "insert image here"> </a></figure> 
+		<figure><a href = "_mainPage.html"><img src="../imgs/top.jpg" alt = "insert image here" height="300"></a></figure>
 	</div>
 
 <!-- Main Navigation  -->
 	<div class = "navGrid">
 		<nav style="overflow: auto">
-			 <ul class = "main-nav-list" style="width: 100%;overflow: hidden;">
-	            <li><a href="../book/book_selectDate.html">BOOK</a></li>
-	            <li><a href="buy.html">BUY</a></li>
-	            <li><a href="../blog/blog.html">BLOG</a></li>
-	            <li><a href="../locate.html">LOCATE</a></li>
-	            <li><a href="../account.html">MY ACCOUNT</a></li>
+			 <ul class = "main-nav-list active" style="width: 100%;overflow: hidden;">
+	            <li><a href="book/book_selectDate.html">BOOK</a></li>
+	            <li><a href="buy/buy.html">BUY</a></li>
+	            <li><a href="blog/blog.html">BLOG</a></li>
+	            <li><a href="locate.html">LOCATE</a></li>
+	            <li style="float:right"><a href="account.html">MY ACCOUNT</a></li>
+
 	          </ul>
 		</nav>
 	</div>
 <!-- ************* -->
 
 <!-- Book + Cart buttons -->
+<!-- 	<div class = "cartGrid">
+		<form>
+			<input type="button" class="button-nav" value="CART" onclick="window.location.href='buy/buy_1_basket.html'"/>
+		</form>
+	</div> -->
+
 	<div class = "cartGrid">
-        <button class="button-nav"><a href = "../buy/buy_1_basket.html"><img src="../imgs/cart.png" alt = "insert image here" height="40" width="50"><br>CART</a></button>
-    </div>
+		<button class="button-nav"><a href = "buy/buy_1_basket.html"><img src="../imgs/cart.png" alt = "insert image here" height="20" width="20"><br>C<br>A<br>R<br>T</a></button>
+	</div>
 
 	<div class = "bookGrid">
-		<button type = "submit" value = "Submit" class = "book-button"><a href="../book/book_selectDate.html">BOOK A STATION!</a></button>
+<!-- 		<form>
+			<input type="button" class="book-button" value="BOOK A STATION" onclick="window.location.href='book/book.html'"/>
+		</form> -->
+		<a href="book/book_selectDate.html"><button type = "submit" value = "Submit" class = "book-button">B<br>O<br>O<br>K<br> <br>N<br>O<br>W</button></a>
 	</div>
 <!-- ************** -->
 	
 	<h1>Merchandise</h1>
 
 	<div class = "bodyText1">
-		<img id="itemImg" src = "../imgs/img.png" alt = "Lorem ipsum dolor sit amet" width ="200" height="125">
+		<img id="brandLogo" src="../imgs/logo/logo_magic.png" alt = "Magic: The Gathering logo">
+		<img id="brandLogo" src="../imgs/logo/logo_pokemon.png" alt = "Pokemon logo" >
+		<img id="brandLogo" src="../imgs/logo/logo_ygo.png" alt="Yu-Gi-Oh logo">
+	</div>
+
+
+		<!-- <img id="itemImg" src = "../imgs/img.png" alt = "Lorem ipsum dolor sit amet" width ="200" height="125">
 			<div id = "merchModal2" class="modal">
 			<div class = "box-item-image">
 				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
@@ -61,26 +78,7 @@ modified on June 14, 2017
 				<div id="caption2"></div>
 				<button class="button-nav" href="#">Add Cart</button>
 			</div>
-		</div>
-
-		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
-			<div id = "merchModal2" class="modal">
-				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
-				<img class = "modal-content" id="img02">
-				<div id="caption2"></div>
-			</div>
-		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
-			<div id = "merchModal2" class="modal">
-				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
-				<img class = "modal-content" id="img02">
-				<div id="caption2"></div>
-			</div>
-		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
-			<div id = "merchModal2" class="modal">
-				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
-				<img class = "modal-content" id="img02">
-				<div id="caption2"></div>
-			</div><br>
+		</div> -->		
 
 		<input type="text" name = "item" placeholder=" Enter keywords"> <button type = "submit" value = "Submit">Search</button>
 
@@ -89,23 +87,54 @@ modified on June 14, 2017
 	<h2>Deals</h2>
 	<div class = "bodyText2">
 		<!-- Deal Item #1 -->
-				<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 1" width ="200" height="125">
-			<div id = "merchModal" class="modal">
-				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
-				<img class = "modal-content" id="img01">
-				<div id="caption"></div>
+		<img id="itemImg" src = "../imgs/merch/darkMagician.jpg" alt = "Dark Magician">
+			<div id = "merchModal0" class="modal">
+				<span class = "close" onclick="document.getElementById('merchModal0').style.display='none'">&times; </span>
+				<img class = "modal-content" id="img00">
+				<div id="caption0"></div>
 			</div>
 			<script>
 				// Get modal
-				var modal= document.getElementById('merchModal');
+				var modal0= document.getElementById('merchModal0');
 
 				// Get image and insert inside modal
-				var img=document.getElementById('itemImg');
-				var modalImg=document.getElementById("img01");
-				var captionText=document.getElementById("caption");
+				var img0=document.getElementById('itemImg');
+				var modalImg0=document.getElementById("img00");
+				var captionText0=document.getElementById("caption0");
 				img.onclick=function(){
-					modal.style.display = "block";
-					modalImg.src = this.src;
+					modal0.style.display = "block";
+					modalImg0.src = this.src;
+					captionText0.innerHTML = this.alt;
+				}
+
+				// Get <span> element that closes modal
+				var span = document.getElementsByClassName("close")[0];
+
+				// When user clicks on <span> (x), close modal
+				span.onclick = function(){
+					modal0.style.display = "none";
+				}
+			</script>
+
+		<!-- ***************** -->
+
+		<!-- Deal Item #2 -->
+		<img id="itemImg" src = "../imgs/merch/charmander.jpg" alt = "Charmander" >
+			<div id = "merchModal" class="modal">
+				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
+				<img class = "modal-content" id="img01">
+				<div id="caption1"></div>
+			</div>
+			<script>
+				// Get modal
+				var modal1= document.getElementById('merchModal');
+
+				// Get image and insert inside modal
+				var modalImg=document.getElementById("img01");
+				var captionText1=document.getElementById("caption1");
+				img.onclick=function(){
+					modal1.style.display = "block";
+					modalImg1.src = this.src;
 					captionText.innerHTML = this.alt;
 				}
 
@@ -114,115 +143,25 @@ modified on June 14, 2017
 
 				// When user clicks on <span> (x), close modal
 				span.onclick = function(){
-					modal.style.display = "none";
+					modal1.style.display = "none";
 				}
 			</script>
 		<!-- ***************** -->
-
-		<!-- Deal Item #2 -->
-				<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
-			<div id = "merchModal2" class="modal">
-				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
-				<img class = "modal-content" id="img02">
-				<div id="caption2"></div>
-			</div>
-
-			<!-- <script>
-				// Get modal
-				var modal2= document.getElementById('merchModal2');
-
-				// Get image and insert inside modal
-				var img=document.getElementById('itemImg');
-				var modalImg2=document.getElementById("img02");
-				var captionText2=document.getElementById("caption2");
-				img.onclick=function(){
-					modal2.style.display = "block";
-					modalImg2.src = this.src;
-					captionText2.innerHTML = this.alt;
-				}
-
-				// Get <span> element that closes modal
-				var span2 = document.getElementsByClassName("close")[0];
-
-				// When user clicks on <span> (x), close modal
-				span.onclick = function(){
-					modal2.style.display = "none";
-				}
-			</script> -->
-		<!-- ***************** -->
-		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
-			<div id = "merchModal2" class="modal">
-				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
-				<img class = "modal-content" id="img02">
-				<div id="caption2"></div>
-			</div>
 
 	</div>
 
 	<h2>Yu-Gi-Oh</h2>
 	<div class = "bodyText3">
-		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
-			<div id = "merchModal2" class="modal">
-				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
-				<img class = "modal-content" id="img02">
-				<div id="caption2"></div>
-			</div>
-		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
-			<div id = "merchModal2" class="modal">
-				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
-				<img class = "modal-content" id="img02">
-				<div id="caption2"></div>
-			</div>
-		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
-			<div id = "merchModal2" class="modal">
-				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
-				<img class = "modal-content" id="img02">
-				<div id="caption2"></div>
-			</div>
 	</div>
 
 	<h2>Pokémon</h2>
 	<div class = "bodyText4">
-		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
-			<div id = "merchModal2" class="modal">
-				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
-				<img class = "modal-content" id="img02">
-				<div id="caption2"></div>
-			</div>
-		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
-			<div id = "merchModal2" class="modal">
-				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
-				<img class = "modal-content" id="img02">
-				<div id="caption2"></div>
-			</div>
-		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
-			<div id = "merchModal2" class="modal">
-				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
-				<img class = "modal-content" id="img02">
-				<div id="caption2"></div>
-			</div>
+		
 	</div>
 
 	<h2>Magic: The Gathering</h2>
 	<div class = "bodyText5">
-		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
-			<div id = "merchModal2" class="modal">
-				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
-				<img class = "modal-content" id="img02">
-				<div id="caption2"></div>
-			</div>
-		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
-			<div id = "merchModal2" class="modal">
-				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
-				<img class = "modal-content" id="img02">
-				<div id="caption2"></div>
-			</div>
-		<img id="itemImg" src = "../imgs/img.png" alt = "Merchandise 2" width ="200" height="125">
-			<div id = "merchModal2" class="modal">
-				<span class = "close" onclick="document.getElementById('merchModal').style.display='none'">&times; </span>
-				<img class = "modal-content" id="img02">
-				<div id="caption2"></div>
-			</div>
+		
 	</div>
 
 </body>
