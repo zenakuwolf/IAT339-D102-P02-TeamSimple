@@ -15,6 +15,7 @@ body {
 /*  background: url("../imgs/bg.jpg");
   background-size: 100% 700px;*/
   background-color: #555;
+  color: rgb(200, 200, 200);
 
 }
 
@@ -292,9 +293,10 @@ color: rgb(30, 30, 30);
   transition: 0.3s;
   width: 15%;
   height: 15%;
+  padding-right: 1em;
 }
 
-#itemImg:hover{opacity: 0.7;}
+#itemImg:hover{opacity: 0.4;}
 
 /* Modal (bkg) */
 .modal{
