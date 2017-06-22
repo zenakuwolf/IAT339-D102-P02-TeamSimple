@@ -169,6 +169,7 @@ font-size: 125%;
 }
 .main-nav-list{
     position: fixed;
+    text-align: center;
     display: inline-block;
     list-style-type: none;
     margin: 0;
@@ -191,14 +192,14 @@ font-size: 125%;
 
 .main-nav-list li{
   float: left;
-  border-right: 2px solid black;
+/*  border-right: 2px solid black;*/
 }
 
 
 .main-nav-list a{
   display: block;
   text-align: center;
-  width: 200px;
+  width: 150px;
   padding: 14px;
 /*  margin-right: 100px;*/
   text-decoration: none;
