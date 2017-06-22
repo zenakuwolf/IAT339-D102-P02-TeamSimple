@@ -35,7 +35,7 @@
 .bodyText1, .bodyText2, .bodyText3, .bodyText4, .bodyText5{
   position: relative;
   padding:0.5em;
-  max-width: 60%;
+  max-width: 80%;
   left: 30px;
 }
 

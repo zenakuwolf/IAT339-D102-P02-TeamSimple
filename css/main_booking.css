@@ -11,9 +11,10 @@ ul{list-style-type: none;}
 
 /*Month header*/
 .month{
+
 	padding: 60px 0px;
 	width: 100%;
-	background: rgb(18 , 125, 232);
+	background: #666;
 }
 
 /*month list*/

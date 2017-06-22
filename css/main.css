@@ -12,7 +12,9 @@ body {
 
   font-family: "Trebuchet MS", sans-serif;
   padding: 2rem;
-  background-color: powderblue;
+  background: url("../imgs/bg.jpg");
+  background-size: 100% 700px;
+
 
 }
 
@@ -47,6 +49,10 @@ code{
 a{
   text-decoration: none;
   color: rgb(255, 255, 255);
+}
+
+.content{
+  background-color: #888;
 }
 
 .in-text {
@@ -112,17 +118,15 @@ input[type=text]{
 }
 
 .imgTop{
-  max-width: auto;
-  max-height: auto;
-  min-width: 300%;
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   position: relative;
-  right: 50px;
+  right: 0px;
   top: 50px;
 }
-/*.imgTop{
-  width:100%;
-}*/
+
 .imgTop:hover, .imgTop:focus{
   opacity: 0.6;
 }
@@ -222,7 +226,7 @@ color: rgb(30, 30, 30);
   display: -ms-flex; /* For support in IE 10 */
   display: flex; 
   -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;  
   flex-wrap: wrap;
   -webkit-justify-content: space-around;
   -ms-justify-content: space-around;
