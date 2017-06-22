@@ -15,7 +15,6 @@
 [class^='grid-col-'] {
 	float: left;
 	padding: 0; 
-	
 }
 
 .grid-col-1of2, .grid-col-1of4, .grid-col-1of3, .grid-col-2of3 {
@@ -60,19 +59,21 @@
 	min-width: auto;
 	max-width: 100px;
 	position: fixed;
-	right: 275px;
+	right: 0px;
+	top: 300px;
 	margin-top: 100px;
 }
 
 .cartGrid{
-	font-size: 24px;
+	font-size: 12px;
 	z-index: 2;
 	min-height: auto;
 	min-width: auto;
 	max-width: 200px;
+	max-height: 200px;
 	position: fixed;
-
-	right: 100px;
+	top: 300px;
+	right: 0px;
 	display: inline-block;
 }
 

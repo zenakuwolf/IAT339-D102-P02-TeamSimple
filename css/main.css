@@ -85,7 +85,7 @@ a{
   border: 3px solid black;
   transition: 0.5s;
   color: rgb(255, 255, 255);
-  font-size: 30px;
+  font-size: 15px;
   padding: 0.5em 0.75em;
   border-radius: 0.25em;
   text-decoration: none;
@@ -112,16 +112,17 @@ input[type=text]{
 }
 
 .imgTop{
-/*  max-width: auto;
-  max-height: auto;*/
-/*  min-width: 300%;
-  width: 100%;*/
+  max-width: auto;
+  max-height: auto;
+  min-width: 300%;
+  width: 100%;
   position: relative;
   right: 50px;
   top: 50px;
-
 }
-
+/*.imgTop{
+  width:100%;
+}*/
 .imgTop:hover, .imgTop:focus{
   opacity: 0.6;
 }
@@ -166,7 +167,6 @@ font-size: 125%;
   display: block;
   font-size: 125%
 }
-
 .main-nav-list{
     position: fixed;
     display: inline-block;
