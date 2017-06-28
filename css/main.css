@@ -124,9 +124,10 @@ input[type=text]{
   margin-right: auto;
   text-align: center;
   position: relative;
-  right: 0px;
+  right: 30px;
   top: 50px;
 }
+
 
 .imgTop:hover, .imgTop:focus{
   opacity: 0.6;
@@ -411,3 +412,5 @@ figcaption{
   }
 
 }
+
+/*main nav*/

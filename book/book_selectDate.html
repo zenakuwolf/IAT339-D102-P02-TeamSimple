@@ -15,6 +15,8 @@ modified on June 14, 2017
 <head>
 	<title>Booking - select date</title>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="../css/main_booking.css" rel="stylesheet">
 	<link href="../css/main.css" rel="stylesheet">
 	<link href="../css/grids.css" rel="stylesheet">
@@ -23,9 +25,7 @@ modified on June 14, 2017
 
 <body>
 	<div class="content">
-	<div class = "imgTop"> 
-		<figure><a href = "../_mainPage.html"><img src="../imgs/top.jpg" alt = "insert image here" height="300"> </a></figure>
-	</div>
+
 
 <!-- Main Navigation  -->
 	<div class = "navGrid">
@@ -40,7 +40,9 @@ modified on June 14, 2017
 		</nav>
 	</div>
 <!-- ************* -->
-
+	<div class = "imgTop"> 
+		<figure><a href = "../_mainPage.html"><img src="../imgs/logo.png" alt = "insert image here" height="140"> </a></figure>
+	</div>
 <!-- Book + Cart buttons -->		
 	<div class = "cartGrid">
 		<button class="button-nav"><a href = "../buy/buy_1_basket.html"><img src="../imgs/cart.png" alt = "insert image here" height="20" width="20"><br>C<br>A<br>R<br>T</a></button>
@@ -96,12 +98,12 @@ modified on June 14, 2017
 		<li>17</li>
 		<li>18</li>
 		<li>19</li>
-		<li><span class="active">20</span></li>
+		<li>20</li>
 		<li>21</li>
 		<li>22</li>
 		<li>23</li>
 		<li>24</li>
-		<li>25</li>
+		<li><span class="active">25</span></li>
 		<li>26</li>
 		<li>27</li>
 		<li>28</li>
@@ -113,7 +115,20 @@ modified on June 14, 2017
 
 	<form class="">
 		Booking time:
-		<input type="time" name="time">
+		<input type="time" name="time"><br>
+		Or Select time:<br>
+		<input type="radio" name="time" value="time"> AM 9:00
+		<input type="radio" name="time" value="time"> AM 10:00<br>
+		<input type="radio" name="time" value="time"> AM 11:00
+		<input type="radio" name="time" value="time"> PM 12:00<br>
+		<input type="radio" name="time" value="time"> PM 1:00
+		<input type="radio" name="time" value="time"> PM 2:00<br>
+		<input type="radio" name="time" value="time"> PM 3:00
+		<input type="radio" name="time" value="time"> PM 4:00<br>
+		<input type="radio" name="time" value="time"> PM 5:00
+		<input type="radio" name="time" value="time"> PM 6:00
+
+
 		
 	</form>
 
