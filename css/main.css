@@ -307,113 +307,8 @@ color: rgb(30, 30, 30);
 
 /*--------- MODAL ----------*/
 
-#itemImg{
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-  width: 15%;
-  height: 15%;
-  padding-right: 1em;
-}
 
-#itemImg:hover{opacity: 0.4;}
-
-#itemImg1{
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-  width: 15%;
-  height: 15%;
-  padding-right: 1em;
-}
-
-#itemImg1:hover{opacity: 0.4;}
-
-/* Modal (bkg) */
-.modal{
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 50px;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.9);
-  z-index: 20;
-}
-
-/* Modal content (img) */
-.modal-content{
-  margin: auto;
-  display: block;
-  width: 50%;
-  max-width: 300px;
-}
-
-/*Caption of Modal img (img txt) */
-#caption{
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add animation */
-.modal-content, #caption{
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom{
-  from{-webkit-transform: scale(0)}
-  to{-webkit-transform: scale(1) }
-}
-
-@keyframes zoom{
-  from{transform:scale(0)}
-  to{transform:scale(1)}
-}
-
-/* Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition:0.3s;
-}
-
-.close:hover, .close:focus{
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% image width on smaller screens */
-@media only screen and (max-width: 700px){
-  .modal-content{
-    width: 100%;
-  }
-}
-
-
-/*.box-item-text{
-  -webkit-flex: 1 1 18em;
-  -ms-flex: 1 1 18em;
-  flex: 1 1 18em;
-  padding: 0 1rem;
-}*/
+/************************/
 
 figure{
   display: block;
@@ -432,13 +327,9 @@ figcaption{
 @media (max-width: 30em){
 
   .box-item-image{
-
     -webkit-order: 2;
-
     -ms-order: 2;
-
     order: 2;
-
   }
 
 }
@@ -475,4 +366,8 @@ ul.topnav li.right {float: right;}
 @media screen and (max-width: 740px){
     ul.topnav li.right, 
     ul.topnav li {float: none;}
+
+    h2 {
+      text-align: center;
+    }
 }
