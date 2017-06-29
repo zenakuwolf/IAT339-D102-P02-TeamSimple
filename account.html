@@ -4,31 +4,33 @@
 <head>
 	<title>Locate page</title>
 	<meta charset="utf-8">
-	<link href="css/main.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main_booking.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link href="css/grids.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <script src="css/script.js" type="text/javascript"></script>
 
 </head>
 
 <body>
-    <div class="content">
+     <div class="bodyText1">
+
+    <ul class="topnav">
+      <li><a href="book/book_selectDate.html">BOOK</a></li>
+      <li><a href="buy/buy.html">BUY</a></li>
+      <li><a href="blog/blog.html">BLOG</a></li>
+      <li><a href="locate.html">LOCATE</a></li>
+      <li class="right"><a href="account.html">MY ACCOUNT</a></li>
+    </ul>
+        </div>
     <div class = "imgTop"> 
-        <a href = "_mainPage.html"><figure> <img src="imgs/top.jpg" alt = "insert image here" height="300"></figure></a>
+        <figure><a href = "_mainPage.html"><img src="imgs/logo.png" alt = "insert image here" height="140"> </a></figure>
     </div>
 
 <!-- Main Navigation  -->
-    <div class = "navGrid">
-        <nav style="overflow: auto">
-             <ul class = "main-nav-list" style="width: 100%;overflow: hidden;">
-                <li><a href="book/book_selectDate.html">BOOK</a></li>
-                <li><a href="buy/buy.html">BUY</a></li>
-                <li><a href="blog/blog.html">BLOG</a></li>
-                <li><a href="locate.html">LOCATE</a></li>
-                <li style="float:right"><a href="account.html">MY ACCOUNT</a></li>
-                
-              </ul>
-        </nav>
-    </div>
+    
 <!-- ************* -->
 
 <!-- Book + Cart buttons -->
@@ -37,12 +39,14 @@
     </div>
 
     <div class = "bookGrid">
-        <a href="book/book_selectDate.html"><button type = "submit" value = "Submit" class = "book-button">B<br>O<br>O<br>K<br> <br>N<br>O<br>W
-    </button></a>
+        <a href="book/book_selectDate.html"><button type = "submit" value = "Submit" class = "book-button">B<br>O<br>O<br>K<br> <br>N<br>O<br>W</button></a>
+    </div>
+        <div class = "topGrid">
+        <button onclick="topFunction()" id ="topButton" title="Go to top"><img src="imgs/arrow.png" alt="insert image here" height="30" width="30"></button>
     </div>
 <!-- ************** -->
     <div class ="bodyText1">
-    <h2>Login with your accont</h2>
+    <h2>Login with your account</h2>
     <div>
 
         Login ID:
@@ -50,7 +54,6 @@
         Password:
         <input type="password" name="psw"><br>
         <button type = "submit" value= "Submit" class = "button-nav"><a href="#">Login</a></button>
-    </div>
     </div>
 </div>
 </body>

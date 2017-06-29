@@ -55,7 +55,7 @@
 }
 
 .bookGrid{
-	z-index: 1;
+	z-index: 2;
 	min-height: auto;
 	min-width: auto;
 	max-width: 100px;
