@@ -78,17 +78,6 @@
 	display: inline-block;
 }
 
-.topGrid{
-	font-size: 15px;
-	min-height: auto;
-	min-width: auto;
-	max-width: 200px;
-	max-height: 200px;
-	position: fixed;
-	top: 170px;
-	right: 0px;
-	display: inline-block;
-}
 .imgTop{
   z-index: 0;
 }
