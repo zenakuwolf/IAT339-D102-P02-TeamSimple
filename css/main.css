@@ -300,9 +300,14 @@ color: rgb(30, 30, 30);
 }
 
 #brandLogo{
-  max-width: 20%;
-  max-height: 20%;
+  display: block;
+  max-width: 60%;
+  max-height: 60%;
 
+}
+
+.homeImg{
+  display: block;
 }
 
 /*--------- MODAL ----------*/
@@ -345,18 +350,15 @@ color: rgb(30, 30, 30);
   max-height: 200px;
 }
 
-figure{
+/*figure{
   display: block;
-}
-
-figure{
-  max-width: auto;
-  max-height: auto;
+  max-width: 500px;
+  max-height: 500px;
 }
 
 figcaption{
   text-align: center;
-}
+}*/
 
 
 @media (max-width: 30em){
@@ -402,8 +404,16 @@ ul.topnav li.right {float: right;}
     ul.topnav li.right, 
     ul.topnav li {float: none;}
 
-    h2 {
+    h1, h2, h3, p {
       text-align: center;
     }
+
+    .homeImg{
+      margin: auto;
+    }
+
+
+
+
 
 }
