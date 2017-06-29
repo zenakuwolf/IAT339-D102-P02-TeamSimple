@@ -78,6 +78,17 @@
 	display: inline-block;
 }
 
+.topGrid{
+	font-size: 15px;
+	min-height: auto;
+	min-width: auto;
+	max-width: 200px;
+	max-height: 200px;
+	position: fixed;
+	top: 170px;
+	right: 0px;
+	display: inline-block;
+}
 .imgTop{
   z-index: 0;
 }
@@ -85,7 +96,7 @@
 	Because our navigation is now fixed and overlaps our content, we need to introduce some space at the top of our page to ensure that overlap doesn't occur. The simplest solution to this is to introduce 'padding-top' to the body element so all the content has some additional spacing (thereby avoiding the overlap).
 */
 body {
-	padding-top: 6rem;
+	padding-top: 2rem;
 }
 
 
@@ -133,7 +144,7 @@ body {
 		Using the same selector in the media queries, we can adjust the padding-top for the body tag as the page resizes.
 	*/
 	body {
-		padding-top: 0.25rem;
+		padding-top: 2rem;
 	}
 
 }
