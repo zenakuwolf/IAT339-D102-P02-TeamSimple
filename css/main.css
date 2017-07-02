@@ -14,7 +14,6 @@ body {
   padding: 2rem;
 /*  background: url("../imgs/bg.jpg");
   background-size: 100% 700px;*/
-  background-color: #555;
   color: rgb(200, 200, 200);
 
 }
@@ -242,6 +241,11 @@ font-size: 125%;
 color: rgb(30, 30, 30);
 }
 
+.bodyText1{
+  width: 100%;
+  background-color: #555;
+}
+
 .box{
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
@@ -309,6 +313,8 @@ color: rgb(30, 30, 30);
 .homeImg{
   display: block;
 }
+
+
 
 /*------- Lightbox -------*/
 .lightbox {
