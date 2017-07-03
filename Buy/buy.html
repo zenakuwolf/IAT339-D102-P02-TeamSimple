@@ -25,49 +25,57 @@ modified on June 14, 2017
 </head>
 
 <body>
+
 <!-- Main Navigation  -->
     <ul class="topnav">
       <li><a href="../book/book_selectDate.html">BOOK</a></li>
-      <li><a href="../buy/buy.html">BUY</a></li>
+      <li><a href="buy/buy.html">BUY</a></li>
       <li><a href="../blog/blog.html">BLOG</a></li>
       <li><a href="../locate.html">LOCATE</a></li>
-      <li class="right"><a href="account.html">MY ACCOUNT</a></li>
+      <li class="right"><a href="../account.html">MY ACCOUNT</a></li>
     </ul>
-    </div>
-    <div class = "imgTop"> 
-        <figure><a href = "../_mainPage.html"><img src="../imgs/logo.png" alt = "insert image here" height="140"> </a></figure>
-    </div>
+
+<div class="content">
+      <figure><a href = "../_mainPage.html"><img src="../imgs/logo_company.png" alt = "Hologame Station logo" id="imgLogo"></a></figure>
 
 <!-- Book + Cart buttons -->
     <div class = "cartGrid">
-        <button class="button-nav"><a href = "../buy/buy_1_basket.html"><img src="../imgs/cart.png" alt = "insert image here" height="20" width="20"><br>C<br>A<br>R<br>T</a></button>
+        <button class="button-nav"><a href = "buy_1_basket.html"><img src="../imgs/cart.png" alt = "insert image here" height="20" width="20"><br>C<br>A<br>R<br>T</a></button>
     </div>
 
+
     <div class = "bookGrid">
-        <a href="../book/book_selectDate.html"><button type = "submit" value = "Submit" class = "book-button">B<br>O<br>O<br>K<br> <br>N<br>O<br>W</button></a>
+        <button class="book-button"><a href="book/book_selectDate.html">B<br>O<br>O<br>K<br> <br>N<br>O<br>W</a></button>
     </div>
 
     <div class = "topGrid">
-        <button onclick="topFunction()" id ="topButton" title="Go to top"><img src="../imgs/arrow.png" alt="insert image here" height="30" width="30"></button>
+        <button onclick="topFunction()" id ="topButton" title="Go to top"><img src="imgs/arrow.png" alt="insert image here" height="30" width="30"></button>
     </div>
 <!-- ************** -->
-	
-	<h1>Merchandise</h1>
 
-	<div class = "bodyText1">
-		<img id="brandLogo" src="../imgs/logo/logo_magic.png" alt = "Magic: The Gathering logo" style="max-width:20%;max-height:20%; display:inline-block;">
-		<img id="brandLogo" src="../imgs/logo/logo_pokemon.png" alt = "Pokemon logo"style="max-width:20%;max-height:20%; display:inline-block;">
-		<img id="brandLogo" src="../imgs/logo/logo_ygo.png" alt="Yu-Gi-Oh logo" style="max-width:20%;max-height:20%; display:inline-block;">
-	</div>
+<div class="content">
+
+	<section id = "bodyText1">
+	<h1>Merchandise</h1>
 
 		<input type="text" name = "item" placeholder=" Enter keywords"> <button type = "submit" value = "Submit">Search</button>
 
-	</div>
+		<div class = "box"> 
+			<div class = "grid-col-1of3">
+			<figure><img class="brandLogo" src="../imgs/logo/logo_magic.png" alt = "Magic: The Gathering logo"></figure></div>
+			<div class = "grid-col-1of3">
+			<figure><img class="brandLogo" src="../imgs/logo/logo_pokemon.png" alt = "Pokemon logo" > </figure></div>
+			<div class = "grid-col-1of3">
+			<figure> <img class="brandLogo" src="../imgs/logo/logo_ygo.png" alt="Yu-Gi-Oh logo"></figure></div>
+		</div>
 
+	</section>
+	
+	<section id= "bodyText2">
 	<h2>Deals</h2>
-	<div class = "bodyText2">
 
 		<!-- Deal Item #1 -->
+		<div class="grid-col-1of3">
 		<!-- Close button; click anywhere -->
 		<button onclick="document.getElementById('lightbox1').style.display='inline';">		      	<img id="merchItem" src="../imgs/merch/darkMagician.jpg" alt="Dark Magician"></button>
 
@@ -89,10 +97,11 @@ modified on June 14, 2017
 		   </td>
 		   </tr>
 	   </table>
-		</div>
+		</div></div>
 		<!-- ***************** -->
 
 		<!-- Deal Item #2 -->
+		<div class="grid-col-1of3">
 		<button onclick="document.getElementById('lightbox2').style.display='inline';">		      	<img id="merchItem" src="../imgs/merch/charmander.jpg" alt="Charmander"></button>
 
 		<div id="lightbox2" class="lightbox" style="display:none" onclick="document.getElementById('lightbox2').style.display='none';">
@@ -112,9 +121,11 @@ modified on June 14, 2017
 		   </tr>
 	   </table>
 		</div>
+		</div>
 		<!-- ***************** -->
 
 		<!-- Deal Item #3 -->
+		<div class="grid-col-1of3">
 		<button onclick="document.getElementById('lightbox3').style.display='inline';">		      	<img id="merchItem" src="../imgs/merch/drudgeSkel.jpg" alt="Drudge Skeleton"></button>
 
 		<div id="lightbox3" class="lightbox" style="display:none" onclick="document.getElementById('lightbox3').style.display='none';">
@@ -134,16 +145,17 @@ modified on June 14, 2017
 		   </tr>
 	   </table>
 		</div>	
+		</div>
 		<!-- ***************** -->
-
 		<a href="#">See more</a>
 
-	</div>
+	</section>
 
+	<section id = "bodyText3">
 	<h2>Yu-Gi-Oh</h2>
-	<div class = "bodyText3">
 
 		<!-- Item #1 -->
+		<div class="grid-col-1of3">
 		<button onclick="document.getElementById('lightbox4').style.display='inline';">		      	<img id="merchItem" src="../imgs/merch/blueEyes.jpg" alt="Blue Eyes White Dragon"></button>
 
 		<div id="lightbox4" class="lightbox" style="display:none" onclick="document.getElementById('lightbox4').style.display='none';">
@@ -162,9 +174,11 @@ modified on June 14, 2017
 		   </tr>
 	   </table>
 		</div>
+		</div>
 		<!-- ***************** -->
 
 		<!-- Item #2 -->
+		<div class="grid-col-1of3">
 		<button onclick="document.getElementById('lightbox5').style.display='inline';">		      	<img id="merchItem" src="../imgs/merch/darkMagician.jpg" alt="Dark Magician"></button>
 
 		<div id="lightbox5" class="lightbox" style="display:none" onclick="document.getElementById('lightbox5').style.display='none';">
@@ -183,9 +197,11 @@ modified on June 14, 2017
 		   </tr>
 	   </table>
 		</div>
+		</div>
 		<!-- ***************** -->
 
 		<!-- Item #3 -->
+		<div class="grid-col-1of3">
 		<button onclick="document.getElementById('lightbox6').style.display='inline';">		      	<img id="merchItem" src="../imgs/merch/redEyes.jpeg" alt="Red Eyes Black Dragon"></button>
 
 		<div id="lightbox6" class="lightbox" style="display:none" onclick="document.getElementById('lightbox6').style.display='none';">
@@ -204,16 +220,18 @@ modified on June 14, 2017
 		   </tr>
 	   </table>
 		</div>
+		</div>
 		<!-- ***************** -->
 
 	<a href="#">See more</a>
 
-	</div>
+	</section>
 
-	<h2>Pokémon</h2>
-	<div class = "bodyText4">
+	<section id = "bodyText4">
+		<h2>Pokémon</h2>
 
 		<!-- Item #1 -->
+		<div class="grid-col-1of3">
 		<button onclick="document.getElementById('lightbox7').style.display='inline';">		      	<img id="merchItem" src="../imgs/merch/pikachu.jpeg" alt="Pikachu"></button>
 
 		<div id="lightbox7" class="lightbox" style="display:none" onclick="document.getElementById('lightbox7').style.display='none';">
@@ -232,9 +250,11 @@ modified on June 14, 2017
 		   </tr>
 	   </table>
 		</div>
+		</div>
 		<!-- ***************** -->
 		
 		<!-- Item #2 -->
+		<div class="grid-col-1of3">
 		<button onclick="document.getElementById('lightbox8').style.display='inline';">		      	<img id="merchItem" src="../imgs/merch/jigglypuff.jpg" alt="Jigglypuff"></button>
 
 		<div id="lightbox8" class="lightbox" style="display:none" onclick="document.getElementById('lightbox8').style.display='none';">
@@ -253,9 +273,11 @@ modified on June 14, 2017
 		   </tr>
 	   </table>
 		</div>
+		</div>
 		<!-- ***************** -->	
 
 		<!-- Item #3 -->
+		<div class="grid-col-1of3">
 		<button onclick="document.getElementById('lightbox9').style.display='inline';">		      	<img id="merchItem" src="../imgs/merch/charmander.jpg" alt="Charmander"></button>
 
 		<div id="lightbox9" class="lightbox" style="display:none" onclick="document.getElementById('lightbox9').style.display='none';">
@@ -274,15 +296,18 @@ modified on June 14, 2017
 		   </tr>
 	   </table>
 		</div>
+		</div>
 		<!-- ***************** -->
 
 	<a href="#">See more</a>
 	
-	</div>
+	</section>
 
+	<section id = "bodyText5">
 	<h2>Magic: The Gathering</h2>
-	<div class = "bodyText5">
+
 		<!-- Item #1 -->
+		<div class="grid-col-1of3">
 		<button onclick="document.getElementById('lightbox10').style.display='inline';">		      	<img id="merchItem" src="../imgs/merch/drudgeSkel.jpg" alt="Drudge Skeleton"></button>
 
 		<div id="lightbox10" class="lightbox" style="display:none" onclick="document.getElementById('lightbox10').style.display='none';">
@@ -301,9 +326,11 @@ modified on June 14, 2017
 		   </tr>
 	   </table>
 		</div>
+		</div>
 		<!-- ***************** -->
 		
 		<!-- Item #2 -->
+		<div class="grid-col-1of3">
 		<button onclick="document.getElementById('lightbox11').style.display='inline';">		      	<img id="merchItem" src="../imgs/merch/elgaudShield.jpg" alt="Elgaud Shieldmate"></button>
 
 		<div id="lightbox11" class="lightbox" style="display:none" onclick="document.getElementById('lightbox11').style.display='none';">
@@ -322,9 +349,11 @@ modified on June 14, 2017
 		   </tr>
 	   </table>
 		</div>
+		</div>
 		<!-- ***************** -->
 
 		<!-- Item #3 -->
+		<div class="grid-col-1of3">
 		<button onclick="document.getElementById('lightbox12').style.display='inline';">		      	<img id="merchItem" src="../imgs/merch/scoriaElemen.jpg" alt="Scoria Elemental"></button>
 
 		<div id="lightbox12" class="lightbox" style="display:none" onclick="document.getElementById('lightbox12').style.display='none';">
@@ -343,11 +372,13 @@ modified on June 14, 2017
 		   </tr>
 	   </table>
 		</div>
+		</div>
 		<!-- ***************** -->	
 
 	<a href="#">See more</a>
 
-	</div>
+	</section>
+
 
 </body>
 
