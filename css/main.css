@@ -10,7 +10,6 @@
 
 body, html {
   font-family: "Segoe UI Light", "Segoe UI", sans-serif;
-  font-weight: 1;
   color: rgb(200, 200, 200);
   width:100%;
   min-height: 100%;
@@ -409,5 +408,8 @@ ul.topnav li.right {float: right;}
       width: 50%;
       height: 50%;
       margin: 0 auto;
+    }
+
+    .col-grid-1of3{
     }
 }
